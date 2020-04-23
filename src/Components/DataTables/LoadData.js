@@ -13,9 +13,9 @@ const LoadData = () => {
     console.log(data);
     return (
         <div>
-            {
+            {/* {
             data.map( i => <AppointmentDataTable patient={i} ></AppointmentDataTable>)
-            }
+            } */}
         </div>
     );
 };

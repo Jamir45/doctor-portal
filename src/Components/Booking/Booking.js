@@ -5,7 +5,7 @@ import './Booking.css'
 const Booking = () => {
 
     const  bookingData = ((patientInfo) => {
-        fetch("http://localhost:4000/patientInfo",{
+        fetch("https://mrdoctor-portal.herokuapp.com/patientinfo",{
             method : "POST",
             headers : {
                 "Content-type" : "application/json; charset=UTF-8"
@@ -22,7 +22,7 @@ const Booking = () => {
             document.getElementById('time').value = 'Select Your Booking Time';
             document.getElementById('age').value = '';
             document.getElementById('weight').value = '';
-            // window.location.pathname = "/appointment";
+            window.location.pathname = "/appointment";
         })
     });
 

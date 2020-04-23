@@ -12,9 +12,8 @@ import Login from './Pages/Login';
 import Booking from './Components/Booking/Booking';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Patients from './Pages/Dashboard/Patients';
-import DashBoardAppointments from './Pages/Dashboard/DashboardAppointment';
 import DashboardAppointment from './Pages/Dashboard/DashboardAppointment';
-import LoadData from './Components/DataTables/LoadData';
+import NotFound from './Pages/Notfound';
 // export const DataContext = createContext();
 // export const CalenderContext = createContext()
 
@@ -45,8 +44,8 @@ function App() {
           <Route  path="/dashboardAppointment">
             <DashboardAppointment></DashboardAppointment>
           </Route>
-          <Route path="/loaddata">
-            <LoadData></LoadData>
+          <Route path="*">
+              <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
